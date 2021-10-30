@@ -1,4 +1,5 @@
 ### What is autoincrementing?
+Autoincrementing is a way to automatically and systematically sequence records in your data table by giving them a unique number. This number is typically assigned to the primary key in your data set. The default is to begin at 1 and increment by 1 for each record. However, you can change the starting number, as well as the step between numbers. Another nice feature with autoincrementing is that if you insert a new record into your table, a unique ID will automatically generate for it. 
 
 
 ### What is the difference between a join and a subquery? 
