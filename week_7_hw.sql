@@ -159,13 +159,15 @@ rate on the second film table. 659 rows are removed. There is a nested loop that
 scans the film2 table. Total planning time was 0.973 and execution time was 1009.067.
 There were 10 total steps.*/
 
-/*The joins took longer to execute and had a few more steps than the subquery. This might be due to the way the aggregation is being performed.*/
+/*The join method took longer to execute and had a few more steps than the subquery. This might be due to the way the aggregation is being performed.
+Typically, subqueries take more processing time. This subquery might have been more efficient due to how simple the query is and
+due to this query having a few less steps to run through.*/
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- 9.	With a window function, write a query that shows the film, its duration, and what percentile the duration fits into. 
-This may help https://mode.com/sql-tutorial/sql-window-functions/#rank-and-dense_rank 
+--This may help https://mode.com/sql-tutorial/sql-window-functions/#rank-and-dense_rank 
 
 -- I selected the film_id, title, and rental_duration columns. 
 -- I am also using the NTILE(100) function because I want to reach the 100th percentile.
