@@ -188,3 +188,8 @@ determined in the background, instead and the data engine determines the best an
 
 /*Bonus:
 Find the relationship that is wrong in the data model. Explain why it’s wrong.*/
+
+/*One relationship that seems to be wrong in the data model is between the 'staff' table and the 'store' table. The data model shows that every store would have to
+be connected to a staff person. But a staff person doesn't necessarily need to be in the store table. This does not seem correct to me because I would imagine that
+all staff need to work at at least one store location, and therefore, be in the store table. It seems it should have the 3 prongs instead, showing that one staff
+person could work at multiple stores (and must work at at least one).   
